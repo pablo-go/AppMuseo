@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang='es'>
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Guia Virtual</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" href="css/style.css" />
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+
+<body class="audio">
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner">
+		<a href="#"class="logo"></a>
+	</header>
+	
+	<aside class="sidebar">
+		<ul>
+			<li><a class="home" href="#"></a></li>
+			<li><a class="tour" href="#"></a></li>
+			<li><a class="audi" href="#"></a></li>
+			<li><a class="mapa" href="#"></a></li>
+			<li><a class="feed" href="#"></a></li>
+			<li><a class="info" href="#"></a></li>
+		</ul>
+	</aside>
+
+	<div id="main" class="wrapper">
+	
+		<section>
+		
+			<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+			<script src="js/audio/mediaelement-and-player.js"></script>
+			<link rel="stylesheet" href="js/audio/mediaelementplayer.css" />
+			
+			<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+			<script>
+			$(function() {
+				$( "#tabs" ).tabs();
+			});
+			function mostrarTexto(audio){
+				$('.cuadro-side').fadeIn().css('display','block');
+				//$('.cuadro-side').css('display','block');
+				audio.replace( /#player?[\w]?/ , "" ); 
+				var numero = $('#'+audio+'').attr('id');
+				var titulo = $('#'+audio+' #prev-titulo').text();
+				var contenido = $('#'+audio+' #prev-contenido').text();
+				$('.cuadro-numero').fadeIn().html(numero);
+				$('.cuadro-contenido').fadeIn().html(contenido);
+				if(titulo.length > 25){
+					$('.cuadro-titulo').css('padding-top', '1px'); 
+					$('.cuadro-titulo').css('height','24px');
+				} else {
+					$('.cuadro-titulo').css('padding-top', '7px'); 
+					$('.cuadro-titulo').css('height','18px');
+				}
+				$('.cuadro-titulo').fadeIn().html(titulo);
+				
+			}
+			</script>
+			
+			<div id="tabs">
+			  <div class="sidebar-interno">
+					<h1>AUDIO</h1>
+					<p>ESTE ES EL CONTENIDO DE PRUEBA</p>
+		
+				<div class="cuadro-side">
+					<div class="cuadro-numero">
+						<span>1</span>
+					</div>
+					<div class="cuadro-titulo">
+						<span>Titulo</span>
+					</div>
+					<div class="cuadro-contenido">
+						<p>contenido</p>
+					</div>
+				</div>
+				
+			  </div>	
+			  
+			  <ul>
+			  	<li><a href="#tabs-0">TODOS</a></li>
+			    <li><a href="#tabs-1">NIVEL -1</a></li>
+			    <li><a href="#tabs-2">NIVEL 1</a></li>
+			    <li><a href="#tabs-3">NIVEL 2</a></li>
+			    <li><a href="#tabs-4">NIVEL 3</a></li>
+			  </ul>
+			  
+			  <div id="tabs-0">
+			    <article id="body-main">
+			    
+			    	<div id="1">
+			    		<audio id="1" src="media/01.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">Bienvenido, bienvenida al Museo de la Memoria y los Derechos Humanos, durante este recorrido seré su guía por la exposición. Si tuviese cualquier pregunta durante la visita, puede contactar a uno de nuestros guías en recepción. Le recuerdo que no está permitido tomar fotografías dentro del edificio. 
+Este proyecto Bicentenario, iniciativa de los organismos de DD.HH., especialmente de aquellos cuyos archivos fueron declarados Memoria del Mundo en 2003, se materializó durante el gobierno de la ex presidenta Michelle Bachelet, quien lo inauguró en enero de 2010.
+ 
+Su misión fundamental es dar a conocer las violaciones sistemáticas a los DD.HH. cometidas durante la dictadura de 1973-1990 y, promover el respeto a los Derechos fundamentales, de manera que nunca más vuelvan a ocurrir hechos de este tipo y magnitud.
+
+Continuemos con el numero 2 Hall de Entrada</span>
+		    		</div>
+                    
+                    <div id="2">
+			    		<audio id="2" src="media/02.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">Hall de Entrada (Muro)</span>
+		    			<span id="prev-contenido" style="display:none;">En este muro se puede apreciar una instalación fotográfica que recoge imágenes de diversos autores. La Instalación representa un mapamundi en el que se observan situaciones de violencia y de violaciones de los derechos humanos en distintas culturas y momentos de la historia contemporánea.
+
+A través de las Comisiones de Verdad, las sociedades han buscado establecer y reconocer la verdad sobre los hechos ocurridos en el contexto de dictaduras, guerras civiles o invasiones; no tienen potestad jurídica, por lo que no pueden someter a los tribunales a los victimarios.  Con estas entidades se abrió paso a distintos procesos en busca de la Justicia y la Reconciliación.
+
+Bajo este muro se encuentra información de los informes levantados por Comisiones de Verdad en 30 países.
+
+Chile tuvo dos distintos procesos del conocimiento de la verdad; el primero en 1990 que hizo referencia a la desaparición y muerte por causas políticas y, la segunda en 2004 que dio cuenta de la tortura y la prisión política sufrida por los opositores de la dictadura.
+
+Los dos últimos cuadros que están al final de este muro, abajo a su izquierda dan cuenta de lo realizado en Chile</span>
+		    		</div>
+                    
+                    <div id="3">
+			    		<audio id="3" src="media/03.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">Comisiones de la Verdad en Chile (VITRINA)</span>
+		    			<span id="prev-contenido" style="display:none;">En esta vitrina se aprecian dos ejemplares de los Informes de las Comisiones de la Verdad en Chile. En abril de 1990, mediante un Decreto Ley firmado por el presidente Patricio Aylwin, se constituyó la Comisión Nacional de Verdad y Reconciliación, presidida por el Jurista Raúl Rettig. De ahí el nombre con el que se conoció esta comisión. Tras casi un año de investigación, la Comisión Rettig hizo entrega del Informe que estableció la existencia de 2.298 detenidos desaparecidos y ejecutados entre el 11 de septiembre de 1973 y el 10 de marzo de 1990. Posteriormente, en 1996, la Corporación Nacional de Reparación y Reconciliación, continuadora de la actividad de la Comisión Rettig aumentó esa cifra a 3.185 personas. En 2011, luego de un nuevo periodo de investigación esta cifra se amplió al agregarse 30 nuevos casos calificados.
+
+En noviembre de 2003, el presidente Ricardo Lagos mediante otro Decreto Ley constituyó la Comisión Nacional sobre Prisión Política y Tortura presidida por Monseñor Sergio Valech. Su objetivo fue investigar las denuncias sobre privación de libertad  por razones políticas y tortura. Un año después, esta comisión entregaría a la sociedad información pormenorizada sobre los casos de 28.459 hombres y mujeres que fueron sometidos a prisión de carácter político y tortura. En 2011 esta cifra se amplía a 38.254 al ser calificados más de 9.000 nuevos casos por la comisión investigadora.
+
+Cada una de las comisiones debía entregar sugerencias de reparación. Estas fueron parte de un conjunto de medidas dirigidas a los familiares de las víctimas y a las víctimas sobrevivientes. 
+
+Las políticas de reparación abarcan los ámbitos civil, jurídico, social, económico y simbólico y se aplican hasta el presente. </span>
+		    		</div>
+                    
+                    <div id="4">
+			    		<audio id="4" src="media/04.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">Memoriales</span>
+		    			<span id="prev-contenido" style="display:none;">Una de las formas que tomó la reparación simbólica fue la relacionada con el apoyo a la construcción de memoriales, recuperación de sitios de prisión y tortura, homenajes a las víctimas, conmemoraciones de fechas emblemáticas como el 30 de agosto que a través de un decreto supremo lo establece como el día de las y los detenidos desaparecidos; también  la edificación del Museo de la Memoria y los Derechos Humanos.
+
+Esta piedra dividida en trozos que emula la forma de nuestro país expone los lugares en los que se alzan sitios de memoria, que son resultado del trabajo colectivo de familiares, víctimas, compañeros de trabajo, de partido político o de agrupaciones de derechos humanos. El objetivo es recordar y reivindicar la dignidad de las víctimas y visibilizar lugares emblemáticos como cementerios, ex recintos de detención, sitios de hallazgos de víctimas, los barrios donde estas vivían, lugares de trabajo, escuelas, entre otros. El Estado se ha hecho parte de esta política de reparación, al impulsar en los últimos años, a través del presupuesto público, políticas que apoyan las iniciativas de levantamiento de memoriales. Aquí se exponen algunos de los cerca de 200 memoriales existentes en Chile.</span>
+		    		</div>
+                    
+                    <div id="5">
+			    		<audio id="5" src="media/05.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">Memorial del Cementerio General</span>
+		    			<span id="prev-contenido" style="display:none;">El primero de los memoriales de victimas desaparecidas y ejecutadas de Chile es el del Cementerio General, fue diseñado por los artistas Claudio Di Girólamo y Nemesio Antúnez. Es un gran muro de concreto con placas de mármol grabadas, levantado en homenaje a todas las víctimas no sobrevivientes de la dictadura. Sus nombres fueron recogidos del listado de la Comisión Rettig y su sucesora la Corporación Nacional de Reparación y Reconciliación. El memorial, en su parte superior, tiene inscrito el verso del poeta chileno Raúl Zurita “Todo mi amor está aquí y se ha quedado pegado a las rocas, al mar, a las montañas”.
+Te invito a que pasemos hacia la vitrina que está a tu izquierda en donde se observa una cruz</span>
+		    		</div>
+                    
+                    <div id="6">
+			    		<audio id="6" src="media/06.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">Cruz Patio 29</span>
+		    			<span id="prev-contenido" style="display:none;">Tras el Golpe de Estado, muchos cuerpos fueron enterrados sin identificación en el Cementerio General de Santiago, en el llamado Patio 29. En 1979, un organismo de derechos humanos que atendía casos de familiares y víctimas de la represión desde 1976: la Vicaría de la Solidaridad, recibió denuncias que en ese patio estaban siendo inhumados cuerpos de forma irregular. En 1990 fueron exhumados y, después de un largo proceso, fueron identificados muchos de los restos óseos. El año 2006 en el proceso del reconocimiento de los cuerpos, se determinó que hubo errores en la identificación de estos por lo que se tuvo que iniciar un nuevo proceso de identificación de los restos, esta vez con los medios más sofisticados existentes. Este trabajo aun sigue en desarrollo bajo la supervisión del Servicio Médico Legal.
+
+La cruz del patio 29 que se exhibe corresponde a un préstamo que hizo el Cementerio General. Dicho patio fue declarado sitio histórico en 2006 y actualmente se ha levantado allí un memorial. En el lugar de donde fue extraída esta pieza se ha colocado una señalética en la que se indica que la Cruz está siendo exhibida en el Museo de la Memoria.
+
+Le invito a continuar el recorrido subiendo la escalera.</span>
+		    		</div>
+                    
+                    <div id="7">
+			    		<audio id="7" src="media/07.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">ESCALERA HACIA LAS SALAS DE EXPOSICIÓN</span>
+		    			<span id="prev-contenido" style="display:none;">Frente a las escaleras, podrán ver un mural fotográfico que muestra el ambiente convulsionado en que vivía el país antes del Golpe de Estado. Mediante imágenes y acompañado por consignas de la época da cuenta de un pueblo en movimiento. La fotografía, obra de Marcelo y Cristian Montecino, presenta la imagen del conocido creador chileno Víctor Jara en medio de una manifestación de apoyo al Gobierno de Salvador Allende. 
+
+Sigamos subiendo por la escalera.</span>
+		    		</div>
+						
+				</article>
+			  </div>
+			  
+			  <div id="tabs-1">
+			    <article id="body-main">
+			    
+			    	<div id="01">
+			    		<audio id="01" src="media/01.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    
+                    <div id="02">
+			    		<audio id="02" src="media/02.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    						
+				</article>
+			  </div>
+			  
+			  <div id="tabs-2">
+			    <article id="body-main">
+			                        
+                    <div id="04">
+			    		<audio id="04" src="media/04.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    
+                    <div id="05">
+			    		<audio id="05" src="media/05.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    
+                    <div id="06">
+			    		<audio id="06" src="media/06.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    
+                    <div id="07">
+			    		<audio id="07" src="media/07.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+						
+				</article>
+			  </div>
+			  
+			  <div id="tabs-3">
+			    <article id="body-main">
+			    
+			    	<div id="01">
+			    		<audio id="01" src="media/01.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    						
+				</article>
+			  </div>
+			  
+			  <div id="tabs-4">
+			    <article id="body-main">
+			    
+			    	<div id="01">
+			    		<audio id="01" src="media/01.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    
+                    <div id="02">
+			    		<audio id="02" src="media/02.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    
+                    <div id="03">
+			    		<audio id="03" src="media/03.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    
+                    <div id="04">
+			    		<audio id="04" src="media/04.mp3" type="audio/mp3" controls="controls"></audio>
+		    			<span id="prev-titulo" style="display:none;">TITULO DE PRUEBA</span>
+		    			<span id="prev-contenido" style="display:none;">TEXTO DE PRUEBA</span>
+		    		</div>
+                    						
+				</article>
+			  </div>
+			  
+			</div>	
+			<script>
+			$('audio,video').mediaelementplayer({
+				success: function(player, node) {
+			        $('.mejs-overlay-button').trigger('click');
+			        }
+			});
+			$(document).ready(function() {
+				for(var i=0;i<=70;i++){
+					var numero = $('#'+i+'').attr('id');
+					var titulo = $('#'+i+' #prev-titulo').text();
+					var contenido = $('#'+i+' #prev-contenido').text();
+				    //alert(titulo);
+			    	if(i>9){
+			    		$('#'+i+' .mejs-container .mejs-inner .mejs-controls .numero-audio').html('<span>'+numero+'</span>');
+			    	} else {
+				    	$('#'+i+' .mejs-container .mejs-inner .mejs-controls .numero-audio').html(numero);
+			    	}
+			    	$('#'+i+' .mejs-container .mejs-inner .mejs-controls .mejs-time-rail .titulo-rail').html(titulo);
+			    }
+			});	
+			</script>
+	
+	</div><!-- #main .wrapper -->
+	
+</div><!-- #page -->
+
+</body>
+</html>
+			

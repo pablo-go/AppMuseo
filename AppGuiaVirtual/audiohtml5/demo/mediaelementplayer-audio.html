@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HTML5 MediaElement</title>	
+	
+	<script src="../build/jquery.js"></script>	
+	<script src="../build/mediaelement-and-player.js"></script>
+	<link rel="stylesheet" href="../build/mediaelementplayer.css" />
+	<script>
+		function audio1(){ $('audio')[0].player.play(); }
+		function audio2(){ $('audio')[1].player.play(); }
+		function audio3(){ $('audio')[2].player.play(); }
+		function audio4(){ $('audio')[3].player.play(); }
+		function audio5(){ $('audio')[4].player.play(); }
+	</script>
+</head>
+<body>
+
+<h1>MediaElementPlayer.js</h1>
+<input type="button" value="1" onclick="audio1();">
+<input type="button" value="2" onclick="audio2();">
+<input type="button" value="3" onclick="audio3();">
+<input type="button" value="4" onclick="audio4();">
+<input type="button" value="5" onclick="audio5();">
+<p>Audio player</p>
+
+<h2>MP3</h2>
+<audio id="player0" src="../media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls"></audio>	
+<hr>
+<audio id="player1" src="../media/01 Spine.mp3" type="audio/mp3" controls="controls"></audio>
+<hr>
+<audio id="player2" src="../media/02 Conduit.mp3" type="audio/mp3" controls="controls">asd</audio>
+<hr>
+<audio id="player3" src="../media/03 The Distance.mp3" type="audio/mp3" controls="controls"></audio>
+<hr>
+<audio id="player4" src="../media/04 Best Friends and Hospital Beds.mp3" type="audio/mp3" controls="controls"></audio>
+
+<script>
+$('audio,video').mediaelementplayer({
+	success: function(player, node) {
+        $('.mejs-overlay-button').trigger('click');
+        }
+});
+</script>
+
+</body>
+</html>
+
